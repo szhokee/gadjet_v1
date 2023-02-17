@@ -11,11 +11,11 @@ class ProductImageSerializers(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class ProductSerializer(serializers.ModelSerializer):
-    images = ProductImageSerializers(many=True, read_only=True)
-    # likes = LikeSerializer(many=True, read_only= True)
-    # owner = serializers.ReadOnlyField(source='owner.email')
+# class ProductSerializer(serializers.ModelSerializer):
+#     images = ProductImageSerializers(many=True, read_only=True)
+#     # likes = LikeSerializer(many=True, read_only= True)
+#     # owner = serializers.ReadOnlyField(source='owner.email')
 
-    class Meta:
-        model = Product
-        fields = '__all__'
+#     class Meta:
+#         model = Product
+#         fields = '__all__'
